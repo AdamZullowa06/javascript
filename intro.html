@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS | Intro</title>
+</head>
+<body>
+    <h2>Mengubah element HTML</h2>
+    <p id="demo">Mengubah element HTML</p>
+    <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello World"'>Klik</button><br><br>
+
+    <h2>Mengubah style HTML</h2>
+    <p id="style">ukuran teks kecil</p>
+    <button type="button" onclick='document.getElementById("style").style.fontSize="35px",document.getElementById("style").innerHTML = "ukuran teks besar"'>Klik</button><br><br>
+
+    <h2>Menghilangkan element HTML</h2>
+    <p id="destroy">Hello World</p>
+    <button type="button" onclick='document.getElementById("destroy").style.display="none"'>Klik</button><br><br>
+
+    <h2>Menampilkan element</h2>
+    <p>Hello World</p>
+    <p id="show" style="display: none;">Goodbye World</p>
+    <button type="button" onclick='document.getElementById("show").style.display="block"'>Klik</button><br><br>
+</body>
+</html>

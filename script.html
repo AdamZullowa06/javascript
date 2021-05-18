@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS | Tag</title>
+    <script>
+        function Head() {
+            document.getElementById("head").innerHTML="script di dalam head";
+        }
+    </script>
+</head>
+<body>
+    <h2>Body</h2>
+    <p id="body"></p>
+    <button type="button" onclick="Body()">Klik</button><br><br>
+
+    <h2>Head</h2>
+    <p id="head"></p>
+    <button type="button" onclick="Head()">Klik</button><br><br>
+
+    <h2>js/script.js</h2>
+    <p id="external"></p>
+    <button type="button" onclick="External()">Klik</button><br><br>
+
+    <script>
+        function Body() {
+            document.getElementById("body").innerHTML="script di dalam body";
+        }
+    </script>
+</body>
+</html>
+<script src="js/script.js"></script>
