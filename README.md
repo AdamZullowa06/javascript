@@ -10,5 +10,7 @@ _Catatan_ urutan file mulai dari:
 - script.html
 - output.html
 - statement.html
+- operator.html
+- expression.html
 
 terimakasih, semoga bermanfaat.
