@@ -4,8 +4,11 @@ Javacript merupakan bahasa pemrograman tingkat tinggi dan dinamis. Javascript po
 
 Materi fundamental javascript ini berdasarkan w3school, website edukasi/belajar pemrograman secara daring. Jika ingin melihat penjelasan yang lebih mengenai materi lanjutan silakan telusuri w3school. Repo ini dibuat untuk memahami dasar-dasar pemrograman dengan javascript dalam terjemahan bahasa.
 
-*Catatan* urutan file mulai dari: 
+_Catatan_ urutan file mulai dari:
+
 - intro.html
 - script.html
+- output.html
+- statement.html
 
 terimakasih, semoga bermanfaat.
