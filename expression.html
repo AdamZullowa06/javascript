@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS | Expressions</title>
+</head>
+<body>
+    <h2>Javascript Expressions</h2>
+    <p>Javascript Expression adalah kombinasi dari nilai, operator, dan variabel untuk menghitung nilai.</p>
+    <p>Jika di aritmatika adalah 5 * 10 = <b id="num"></b></p>
+    <button type="button" onclick="operate()">Hasil</button><br><br>
+
+    <p>Pada sebuah variabel "x" bernilai 5 lalu x * 10 = <b id="var"></b></p>
+    <button type="button" onclick="variable()">Hasil</button><br><br>
+
+    <p>Bisa juga untuk menambahkan sesama "string"</p>
+    <p>seperti "Hello" + "World" menjadi <b id="string"></b></p>
+    <button type="button" onclick="string()">Hasil</button>
+
+    <script>
+        function operate() {
+            document.getElementById("num").innerHTML=5*10;
+        };
+        
+        function variable() {
+            var x;
+            x = 5;
+            document.getElementById("var").innerHTML = x * 10;
+        };
+
+        function string() {
+            document.getElementById("string").innerHTML = "Hello"+""+"World";
+        }
+    </script>
+</body> 
+</html>
