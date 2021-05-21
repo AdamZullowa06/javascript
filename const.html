@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS | Const</title>
+</head>
+<body>
+    <h2>Javascript Const</h2>
+    <p>const adalah variable yang memiliki nilai tetap, tidak dapat diubah.</p>
+    <p>contoh, terdapat variable x dengan tipe konstanta dan diberi nilai 3.141592653589793.</p>
+    <p>Jika nilai diubah menjadi 3.14 maka hasilnya seperti ini :<b id="const"></b></p><br>
+    <script>
+        try {
+            const x = 3.141592653589793;
+            // jika nilai property/variable diubah maka akan error karena nilai nya tetap.
+            x = 3.14; 
+            document.getElementById("const").innerHTML = x;
+        } catch (err) {
+            document.getElementById("const").innerHTML = err;
+        }
+    </script>
+
+    <h2>Block Scope</h2>
+    <p>Scope yang didalamnya terdapat block statement "{}"</p>
+    <p>contoh : <b id="block"></b></p><br>
+    <script>
+        var x = 10;
+        // nilai x di luar block statement adalah 10
+        {
+            const x = 2;
+            // nilai x di dalam block statement adalah 2.
+            // variable menggunakan konstanta, nilai tidak dapat diubah. 
+        }
+        // bila dieksekusi maka variable x = 10 yang akan tereksekusi.
+        document.getElementById("block").innerHTML = x;
+    </script>
+</body>
+</html>
