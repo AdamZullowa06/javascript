@@ -12,5 +12,7 @@ _Catatan_ urutan file mulai dari:
 - statement.html
 - operator.html
 - expression.html
+- scope.html
+- const.html
 
 terimakasih, semoga bermanfaat.
