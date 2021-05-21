@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS | Scope</title>
+</head>
+<body>
+    <h1>Javascript Scope</h1><br>
+
+    <h2>Global Scope</h2>
+    <p>Global Scope adalah variable yang bisa dideklarasi di luar function atau di script mana pun</p>
+    <p>contoh : <b id="global"></b></p><br>
+    <script>
+        var hello = "Hello World";
+        coba();
+
+        function coba() {
+            document.getElementById("global").innerHTML = hello;
+        }
+    </script>
+
+    <h2>Function Scope</h2>
+    <p>Function Scope adalah variable yang dideklarasi di dalam function itu sendiri</p>
+    <p>contoh : <b id="local"></b></p><br>
+    <script>
+        contoh();
+
+        function contoh() {
+            var hello = "Hello World";
+            document.getElementById("local").innerHTML = typeof hello + " " + hello;
+        }
+    </script>
+
+    <h2>Loop Scope</h2>
+    <p>Loop Scope adalah method method/fungsi untuk mengeksekusi kode yang sama berluang kali</p>
+    <p>contoh : membuat fungsi perhitungan dari 1 sampai 10</p>
+    <p><b id="loop"></b></p>
+    <script>
+        var text = "";
+        var i;
+        for (var i = 1; i <=10; i++) {
+            text += i + "<br>";
+        }
+        document.getElementById("loop").innerHTML = text;
+    </script>
+</body>
+</html>
