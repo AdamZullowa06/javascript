@@ -14,5 +14,6 @@ _Catatan_ urutan file mulai dari:
 - expression.html
 - scope.html
 - const.html
+- arithmetic.html
 
 terimakasih, semoga bermanfaat.
