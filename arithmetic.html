@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS | Arithmetic</title>
+</head>
+<body>
+    <h1>Javascript Arithmetic</h1>
+    <h2>operator pertambahan (bilangan)</h2>
+    <p>100 + 50 = <b id="tambah"></b></p>
+    <button type="button" onclick="tambah()">Hitung</button><br><br>
+
+    <h2>operator pertambahan (variable)</h2>
+    <p>100 + 50 = <b id="var"></b></p>
+    <button type="button" onclick="tambah_variable()">Hitung</button><br><br>
+
+    <h2>expression</h2>
+    <p>( 100 + 5 ) * a = <b id="express"></b></p>
+    <button type="button" onclick="expression()">Hitung</button><br><br>
+
+    <h2>operator pengurangan</h2>
+    <p>5 - 2 = <b id="kurang"></b></p>
+    <button type="button" onclick="kurang()">Hitung</button><br><br>
+
+    <h2>operator perkalian</h2>
+    <p>5 * 2 = <b id="kali"></b></p>
+    <button type="button" onclick="kali()">Hitung</button><br><br>
+
+    <h2>operator pembagian</h2>
+    <p>10 / 5 = <b id="bagi"></b></p>
+    <button type="button" onclick="bagi()">Hitung</button><br><br>
+
+    <h2>operato modulus</h2>
+    <p>5 % 2 = <b id="modulus"></b></p>
+    <button type="button" onclick="modulus()">Hitung</button><br><br>
+    <script>
+        function tambah() {
+            var x = 100 + 50;
+            document.getElementById("tambah").innerHTML = x;    
+        }
+
+        function tambah_variable() {
+            var a = 100;
+            var b = 50;
+            var x = a + b;
+            document.getElementById("var").innerHTML = x;
+        }
+
+        function expression() {
+            var a = 3;
+            var x = (100 + 50)*a;
+            document.getElementById("express").innerHTML  = x;
+        }
+
+        function kurang() {
+            var x = 5;
+            var y = 2;
+            var z = x - y;
+            document.getElementById("kurang").innerHTML = z;
+        }
+
+        function kali() {
+            var x = 5;
+            var y = 2;
+            var z = x * y;
+            document.getElementById("kali").innerHTML = z;
+        }
+
+        function bagi() {
+            var x = 10;
+            var y = 5;
+            var z = x / y;
+            document.getElementById("bagi").innerHTML = z;
+        }
+
+        function modulus() {
+            var x = 5;
+            var y = 2;
+            var z = x % y;
+            document.getElementById("modulus").innerHTML = z;
+        }
+    </script>
+</body>
+</html>
