@@ -15,5 +15,6 @@ _Catatan_ urutan file mulai dari:
 - scope.html
 - const.html
 - arithmetic.html
+- dataType.html
 
 terimakasih, semoga bermanfaat.
