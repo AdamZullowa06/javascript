@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS | Function</title>
+</head>
+<body>
+    <h2>Javascript Function</h2>
+    <p>contoh memanggil fungsi perhitungan : <b id="example"></b></p><br>
+    
+    <h2>Function Return</h2>
+    <p>Jika function dipanggil dari sebuah variable, JavaScript akan "return" untuk mengeksekusi kode setelah variable dipanggil.</p><br>
+    <p>
+        var x = myFunction2(10, 5); // variable memanggil fungsi lalu mengisi parameternya. Dan hasilnya ada di dalam variable x <br><br>
+
+        function myFunction2(x,y) { <br><br>
+            return x*y; // setelah fungsi dieksekusi akan dikembalikan ke variable x menjadi hasilnya <br><br>
+        } <br><br>
+        hasilnya : <b id="example2"></b>
+    </p><br>
+
+    <h2>Fungsi Temperatur suhu fahrenheit ke celcius</h2>
+    <p>77 derajat fahrenheit sama dengan <b id="example3"></b></p><br>
+
+    <h2>Local Function</h2>
+    <p>Jika variable dituliskan didalam function, maka menjadi variable lokal (hanya bisa diakses oleh function itu sendiri).</p><br>
+    <p>
+        // tidak bisa menggunakan variable carName <br><br>
+
+        function myFunction() { <br><br>
+        var carName = "Volvo"; <br><br>
+        // bisa menggunakan variable carName <br><br>
+        hasilnya : <b id="example4"></b> <br><br>
+        } <br><br>
+
+        // tidak bisa menggunakan variable carName <br><br>
+        hasilnya : <b id="example5"></b>
+    </p>
+    <script>
+        // syntax penulisan fungsi
+        // function nama_fungsi (parameter1, parameter2) {
+        // eksekusi parameter1 dan parameter2
+        // } 
+        function myFunction(x, y) {
+            return x * y;
+        }
+        document.getElementById("example").innerHTML = myFunction(4,5);
+
+        var x = myFunction2(10,5);
+
+        function myFunction2(x,y) { 
+            return x*y;
+        }
+        document.getElementById("example2").innerHTML = x;
+
+        function celcius(f) {
+            return (5 / 9) * (f - 32);
+        }
+        document.getElementById("example3").innerHTML = celcius(77) + " derajat celcius.";
+
+        myFunction3();
+
+        function myFunction3() {
+            var carName = "volvo";
+            document.getElementById("example4").innerHTML = typeof carName + " " + carName;
+        }
+
+        document.getElementById("example5").innerHTML = typeof carName;
+    </script>
+</body>
+</html>
