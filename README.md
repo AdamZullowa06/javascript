@@ -16,5 +16,6 @@ _Catatan_ urutan file mulai dari:
 - const.html
 - arithmetic.html
 - dataType.html
+- function.html
 
 terimakasih, semoga bermanfaat.
