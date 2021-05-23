@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS | Data Type</title>
+</head>
+<body>
+    <h2>Javascript Data Types</h2>
+    <p>Javascript variable dapat menampung berbagai tipe data; bilangan, string, objek dan lainnya.</p>
+    <p>
+        var length = 16; //Bilangan <br><br>
+        var lastName = "John"; // String <br><br> 
+        var x = {firstName: "Doe", lastName: "John"};   // Objek
+    </p>
+    
+    <p>contoh lain; 16 + "volvo" =  <b id="example2"></b></p>
+    <script>
+        var x = 16 + " " + "Volvo";
+        document.getElementById("example2").innerHTML = x;
+    </script>
+    
+    <p>16 + 4 + "volvo" = <b id="example3"></b></p>
+    <script>
+        var x = 16 + 4 + " " + "volvo";
+        document.getElementById("example3").innerHTML = x;
+    </script>
+
+    <h2>Javascript Type Dynamic</h2>
+    <p>javascript juga bisa menampung 2 tipe data berbeda dalam satu variable</p>
+    <p>
+        var x;           // x tidak diketahui <br><br>
+        x = 5;           // x adalah angka <br><br>
+        x = "John";      // sekarang x adalah string <br><br>
+        maka hasilnya saat dieksekusi : <b id="example4"></b>
+    </p>
+    <script>
+        var x;
+        x = 5;
+        x = "john";
+        document.getElementById("example4").innerHTML = x;
+    </script>
+
+    <h2>Javascript Booleans</h2>
+    <p>tipe data booelan hanya memiliki dua nilai; true atau false.</p>
+    <p>
+        var x = 5; <br><br>
+        var y = 5; <br><br>
+        var z = 6; <br><br>
+        (x == y) = <b id="true"></b> <br><br>
+        (x == z) = <b id="false"></b> <br><br>
+    </p>
+    <script>
+        var x = 5;
+        var y = 5;
+        var z = 6;
+        document.getElementById("true").innerHTML = x==y;
+        document.getElementById("false").innerHTML = x==z;
+    </script>
+
+    <h2>Javascript Arrays []</h2>
+    <p>index array dimulai dari urutan [0].</p>
+    <p>
+        var cars = ["Saab","Volvo","BMW"]; <br><br>
+        menampilkan index pertama : <b id="example5"></b>
+    </p>
+    <script>
+        var cars = ["Saab","Volvo","BMW"];
+        document.getElementById("example5").innerHTML = cars[0];
+    </script>
+
+    <h2>Javascript Object</h2>
+    <p>objeknya ditulis menggunakan buka-tutup kurung {}</p>
+    <p>format penulisan sebagai nama:nilai dan seterusnya dipisahkan dengan koma.</p>
+    <p>
+        var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+    </p>
+    <p>menampilkan firstName dan age : <b id="object"></b></p>
+    <script>
+        var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+        document.getElementById("object").innerHTML = person.firstName + " berumur " + person.age + " tahun.";
+    </script>
+</body>
+</html>
