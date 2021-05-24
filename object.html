@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS | Object</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        .table {
+            width: 40%;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <h2>Javascript Object</h2>
+    <p>contoh objek adalah sebuah mobil yang memiliki merek, warna, model, dan berat sebagai properti dari mobilnya.</p><br>
+    <table class="table">
+        <thead>
+            <tr class="table">
+                <th>Properti</th>
+                <th>Nilai</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Tipe</td>
+                <td>Toyota</td>
+            </tr>
+            <tr>
+                <td>Model</td>
+                <td>Avanza</td>
+            </tr>
+            <tr>
+                <td>Warna</td>
+                <td>Putih</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>var car = {type:"toyota", model:"avanza", color:"putih"};</p>
+    <p>menampilkan tipe, model, dan warna mobil : <b id="example"></b></p><br>
+    <hr>
+    <h2>Contoh Kasus</h2>
+    <p>Jika objectnya adalah orang dan propertinya adalah nama depan, nama belakang, dan umur: </p>
+    <table class="table">
+        <thead>
+            <tr class="table">
+                <th>Properti</th>
+                <th>Nilai</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nama depan</td>
+                <td>John (String)</td>
+            </tr>
+            <tr>
+                <td>Nama belakang</td>
+                <td>Doe (String)</td>
+            </tr>
+            <tr>
+                <td>Umur</td>
+                <td>25 (Number)</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>var person = { firstName:"John", lastName:"Doe", age:25 };</p>
+    <p>menampilkan nama depan dan umur : <b id="example2"></b></p><br>
+    <hr>
+    <h2>Object Method</h2>
+    <p>Method adalah aksi yang dapat dilakukan sebuah object, dinyatakan dalam bentuk function.</p>
+    <p>contoh dalam object mobil : </p>
+    <table class="table">
+        <thead>
+            <tr class="table">
+                <th>Properti</th>
+                <th>Nilai</th>
+                <th>Method</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Tipe</td>
+                <td>Toyota (String)</td>
+                <td>Jalan</td>
+            </tr>
+            <tr>
+                <td>Model</td>
+                <td>Avanza (String)</td>
+                <td>Mundur</td>
+            </tr>
+            <tr>
+                <td>Warna</td>
+                <td>putih (String)</td>
+                <td>Berhenti</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>mobil dengan method Jalan : <b id="example3"></b></p>
+    <p>mobil dengan method mundur : <b id="example4"></b></p>
+    <p>mobil dengan method berhenti : <b id="example5"></b></p>
+    <script>
+        
+        // object mobil
+        var car = {type:"Toyota", model:"avanza", color:"putih"};
+        document.getElementById("example").innerHTML =
+        "Mobil " + car.type + ", model " + car.model + ", warna " + car.color + ".";
+        
+        // object orang
+        var person = {firstName:"John", lastName:"Doe", age:25};
+        document.getElementById("example2").innerHTML = 
+        "Nama saya " + person.firstName + ", saya berumur " + person.age + " tahun.";
+        
+        // javascript object
+        var mobil = mobil_jalan("toyota", "avanza", "putih");
+        
+        function mobil_jalan(type, model, color) {
+            return "Mobil " + type + " " + model + " berwarna " + color + " berjalan.";
+        }
+        document.getElementById("example3").innerHTML = mobil;
+        
+        var mobil = mobil_mundur("toyota", "avanza", "hitam");
+        
+        function mobil_mundur(type, model, color) {
+            return "Mobil " + type + " " + model + " berwarna " + color + " mundur.";
+        }
+        document.getElementById("example4").innerHTML = mobil;
+
+        var mobil = mobil_berhenti("toyota", "avanza", "merah");
+        
+        function mobil_berhenti(type, model, color) {
+            return "Mobil " + type + " " + model + " berwarna " + color + " berhenti.";
+        }
+        document.getElementById("example5").innerHTML = mobil;
+    </script>
+</body>
+</html>
