@@ -17,5 +17,6 @@ _Catatan_ urutan file mulai dari:
 - arithmetic.html
 - dataType.html
 - function.html
+- object.html
 
 terimakasih, semoga bermanfaat.
