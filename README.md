@@ -18,5 +18,6 @@ _Catatan_ urutan file mulai dari:
 - dataType.html
 - function.html
 - object.html
+- event.html
 
 terimakasih, semoga bermanfaat.
