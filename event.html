@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS | Event</title>
+
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .table {
+            width: 50%;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <h2>Javascript Events</h2>
+    <p>html memperbolehkan untuk menggunakan atribut event javascript dan mengeksekusi langsung.</p>
+    <p>contoh, memperlihatkan waktu :  <b id="example"></b></p>
+    <button onclick="document.getElementById('example').innerHTML = Date()">Klik</button><br>
+
+    <h2>List Atribut HTML Event</h2>
+    <table class="table">
+        <thead>
+            <tr class="table">
+                <th>Event</th>
+                <th>Keterangan</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>onchange</td>
+                <td>Elemen HTML telah diubah</td>
+            </tr>
+            <tr>
+                <td>onclick</td>
+                <td>Pengguna mengklik elemen HTML</td>
+            </tr>
+            <tr>
+                <td>onmouseover</td>
+                <td>Pengguna menggerakkan mouse ke atas elemen HTML</td>
+            </tr>
+            <tr>
+                <td>onmouseout</td>
+                <td>Pengguna menjauhkan mouse dari elemen HTML</td>
+            </tr>
+            <tr>
+                <td>onkeydown</td>
+                <td>Pengguna menekan tombol keyboard</td>
+            </tr>
+            <tr>
+                <td>onload</td>
+                <td>Browser telah selesai memuat halaman</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
