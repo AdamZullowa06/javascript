@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS | String</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        table, th, td {
+            border : 1px solid black;
+            padding: 10px;
+        }
+
+        .table {
+            width: 40%;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <h2>Javascript String</h2>
+    <p>javascript string digunakan untuk menyimpan dan manipulasi teks.</p>
+    <p>var x = " John Doe ";</p>
+    <p>jika variable x dieksekusi maka tampil : <b id="example"></b></p><br><hr>
+
+    <h2>String Length</h2>
+    <p>digunakan untuk mencari jumlah karakter sebuah string dengan menggunakan "length" atribut.</p>
+    <p>var txt = "ABCDEFGHIJKLMNOPQRSUVWXYZ";</p>
+    <p>var str = txt.length;</p>
+    <p>jika variable str dieksekusi maka tampil : <b id="example2"></b></p><br><hr>
+
+    <h2>Escape Character</h2>
+    <p>saat menuliskan string dan terdapat penggunaan kutip maka akan terjadi error atau string tidak dikenali.</p>
+    <p>untuk mengatasinya, yaitu menggunakan backslash (\).</p>
+    <p>var x = "We are the so-called \"Vikings\" from the north."; </p>
+    <p>jika dijalankan, outputnya tampil : <b id="example3"></b></p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Atribut</th>
+                <th>Output</th>
+                <th>Deskripsi</th>
+            </tr>
+        </thead>
+        <tbody>
+             <tr>
+                 <td>\'</td>
+                 <td>'</td>
+                 <td>kutip satu</td>
+             </tr>
+             <tr>
+                <td>\"</td>
+                <td>"</td>
+                <td>kutip dua</td>
+            </tr>
+            <tr>
+                <td>\\</td>
+                <td>\</td>
+                <td>garis miring terbalik</td>
+            </tr>
+            <tr>
+                <td>\b</td>
+                <td></td>
+                <td>backspace</td>
+            </tr>
+            <tr>
+                <td>\n</td>
+                <td></td>
+                <td>new line</td>
+            </tr>
+            <tr>
+                <td>\f</td>
+                <td></td>
+                <td>form feed</td>
+            </tr>
+            <tr>
+                <td>\r</td>
+                <td></td>
+                <td>carriage return</td>
+            </tr>
+            <tr>
+                <td>\t</td>
+                <td></td>
+                <td>horizontal tabulator</td>
+            </tr>
+            <tr>
+                <td>\v</td>
+                <td></td>
+                <td>vertical tabulator</td>
+            </tr>
+        </tbody>
+    </table><br><br>
+    
+    <h2>Strings Can be Objects</h2>
+    <p>normalnya, string javascript hanya sebuah nilai berbentuk teks :</p>
+    <p>var fisrtName = "John"; output : <b id="example4"></b></p>
+    <p>tapi, string bisa dinyatakan sebagai object dengan menambahkan keyword "new" : </p>
+    <p>var fisrtName = new String("John"); output : <b id="example5"></b></p>
+    <script>
+        var x = "John Doe";
+        document.getElementById("example").innerHTML = x;
+
+        var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        var str = txt.length;
+        document.getElementById("example2").innerHTML = str;
+
+        var x = "We are the so-called \"Vikings\" from the north."; 
+        document.getElementById("example3").innerHTML = x;
+
+        var firstName = "John";
+        document.getElementById("example4").innerHTML = typeof firstName;
+        
+        var firstName = new String("John");
+        document.getElementById("example5").innerHTML = typeof firstName;
+    </script>
+</body>
+</html>
