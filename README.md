@@ -19,5 +19,6 @@ _Catatan_ urutan file mulai dari:
 - function.html
 - object.html
 - event.html
+- string.html
 
 terimakasih, semoga bermanfaat.
